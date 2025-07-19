@@ -1,0 +1,105 @@
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4A3AFF;
+  color: white;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.chatbot-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 320px;
+  height: 420px; /* ✅ Dimensiune fixă */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.chatbot-header {
+  background-color: #4A3AFF;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f4f4ff;
+  overflow-y: auto; /* ✅ Scroll vertical */
+  scrollbar-width: thin;
+  scrollbar-color: #bbb transparent;
+}
+
+/* Optional: scroll frumos pentru Chrome */
+.chatbot-messages::-webkit-scrollbar {
+  width: 6px;
+}
+.chatbot-messages::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 3px;
+}
+
+.chatbot-message {
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: white;
+  word-wrap: break-word;
+}
+
+.chatbot-message.left {
+  background-color: #4A3AFF;
+  align-self: flex-start;
+}
+
+.chatbot-message.right {
+  background-color: #2727d8;
+  align-self: flex-end;
+}
+
+.chatbot-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+  background: white;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.chatbot-input button {
+  background: none;
+  border: none;
+  color: #4A3AFF;
+  font-size: 20px;
+  padding: 0 15px;
+  cursor: pointer;
+}

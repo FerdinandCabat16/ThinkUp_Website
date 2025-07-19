@@ -1,0 +1,142 @@
+.register-page {
+    background-color: #f3f3ff;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-header {
+    padding: 20px;
+  }
+  
+  .logo-box {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid black;
+    display: inline-block;
+  }
+  
+  .register-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .register-main h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .register-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .tab-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #4A3AFF;
+    border: 2px solid #4A3AFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: #4A3AFF;
+    color: white;
+}
+
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+  }
+  
+  .register-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .register-form input,
+  .register-form select {
+    padding: 10px;
+    border: 1px solid #4A3AFF;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 5px;
+  }
+  
+  .password-field .password-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .password-input input {
+    flex: 1;
+    padding-right: 40px;
+  }
+  
+  .password-input button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4A3AFF;
+  }
+  
+  .submit-btn {
+    background-color: #4A3AFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background-color: #4A3AFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  .error-msg {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}

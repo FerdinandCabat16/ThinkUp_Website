@@ -1,0 +1,244 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.dashboard-body {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 220px;
+  background: #4A3AFF;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 10px;
+  border-radius: 0 0 20px 0;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar button.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+/* Conținut */
+.dashboard-content {
+  flex: 1;
+  padding: 40px;
+  background: #f3f3ff;
+}
+
+.content-wrapper {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Filtre */
+.filter-btn {
+  background: #4A3AFF;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.filter-dropdown {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+}
+
+.filter-dropdown label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.filter-dropdown input, .filter-dropdown select {
+  padding: 6px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Cursuri */
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course-card {
+  display: flex;
+  gap: 15px;
+  border: 1px solid #4A3AFF;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+.course-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.nav-btn {
+  background-color: #0A32B5;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 25px;
+  font-size: 14px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #4A3AFF;
+  display: flex;
+  align-items: center;
+  border-radius: 0 40px 40px 0;
+  padding: 10px 20px;
+  position: relative;
+  height: 70px;
+}
+
+/* ✅ Dropdown styling îmbunătățit */
+.dropdown-menu {
+  position: absolute;
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 8px;
+  z-index: 10;
+}
+
+.dropdown-icon.rotated {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.location-info {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.location-error {
+  font-size: 12px;
+  margin-top: 10px;
+  color: red;
+}
+.course-info {
+  flex: 1;
+}
+
+.course-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.course-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.enroll-btn {
+  margin-top: 15px;
+  background-color: #4A3AFF;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #3526d4;
+  transform: scale(1.05);
+}
+/* Calendar styling */
+.calendar-container {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.react-calendar {
+  border: none !important;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Chart styling */
+.chart-container {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tooltip custom */
+.recharts-default-tooltip {
+  background-color: #ffffff !important;
+  border: 1px solid #ddd !important;
+  border-radius: 8px !important;
+  padding: 10px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bars hover */
+.recharts-bar-rectangle:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Location text */
+.location-info {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
